@@ -9,7 +9,8 @@
   NOTAS
   1. Imagens esperadas em /img/ ao lado deste arquivo:
      logo.jpg, bowl.png (recorte sem fundo), big.jpg, combo.jpg, pizza.jpg,
-     O favicon.svg fica na raiz, ao lado deste arquivo, nao dentro de /img.
+     Na raiz, ao lado deste arquivo: favicon.ico, icon-96.png,
+     icon-192.png e apple-touch-icon.png. O Google le o favicon.ico da raiz.
      fachada.jpg (pedir ao Felipe) e og.jpg 1200x630 (pedir ao Felipe).
   2. Preços conferidos em setembro de 2026. Revisar a cada mudança
      de cardápio, ou remover os preços e deixar só o link.
@@ -33,8 +34,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FBFAF8">
 <link rel="canonical" href="https://villadeli.com.br">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="img/logo.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icon-96.png" type="image/png" sizes="96x96">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -631,7 +634,10 @@
   "name": "Villa Deli - Pizza & Burger",
   "description": "Hamburgueria e pizzaria na Vila da Serra, Nova Lima. Burger 100% Angus, pizza artesanal de longa fermentação e bowls.",
   "url": "https://villadeli.com.br",
-  "image": "https://villadeli.com.br/img/og.jpg",
+  "image": [
+    "https://villadeli.com.br/img/og.jpg",
+    "https://villadeli.com.br/img/big.jpg"
+  ],
   "servesCuisine": ["Hambúrguer", "Pizza", "Saladas"],
   "priceRange": "R$ 40-60",
   "telephone": "+5531984428765",
